@@ -7,6 +7,8 @@ import Index from "./pages/Index.tsx";
 import Directory from "./pages/Directory.tsx";
 import Messages from "./pages/Messages.tsx";
 import BlockParty from "./pages/BlockParty.tsx";
+import Profile from "./pages/Profile.tsx";
+import Matches from "./pages/Matches.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -22,6 +24,8 @@ const App = () => (
           <Route path="/directory" element={<Directory />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/block-party" element={<BlockParty />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/matches" element={<Matches />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

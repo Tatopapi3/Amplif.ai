@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
   { label: "Home", path: "/" },
+  { label: "My Profile", path: "/profile" },
+  { label: "Matches", path: "/matches" },
   { label: "Directory", path: "/directory" },
   { label: "Messages", path: "/messages" },
   { label: "Block Party", path: "/block-party" },
@@ -20,6 +22,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <Link to="/" className="flex items-center gap-2">
           <span className="text-display text-2xl font-bold text-primary">amplif.ai</span>
+          <span className="text-[10px] text-muted-foreground font-medium hidden sm:inline">NYC</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-1">
@@ -27,7 +30,7 @@ const Navbar = () => {
             <Link
               key={item.path}
               to={item.path}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+              className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                 location.pathname === item.path
                   ? "bg-primary text-primary-foreground"
                   : "text-foreground/70 hover:text-foreground hover:bg-muted"
