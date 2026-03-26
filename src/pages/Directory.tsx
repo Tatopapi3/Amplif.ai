@@ -9,12 +9,12 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const neighbors = [
-  { id: 1, name: "Maria Santos", bio: "Retired teacher. Love gardening and baking sourdough.", avatar: "MS", skillsHave: ["Baking", "Tutoring", "Gardening"], skillsNeed: ["Plumbing", "Tech Help"] },
-  { id: 2, name: "James Chen", bio: "Software engineer. Happy to help with anything tech.", avatar: "JC", skillsHave: ["Coding", "Networking", "PC Repair"], skillsNeed: ["Carpentry", "Baking"] },
-  { id: 3, name: "Aisha Johnson", bio: "Licensed plumber and weekend DJ. Block party ready!", avatar: "AJ", skillsHave: ["Plumbing", "DJ", "Event Planning"], skillsNeed: ["Gardening"] },
-  { id: 4, name: "Tom Kowalski", bio: "Carpenter by trade. Building things is my therapy.", avatar: "TK", skillsHave: ["Carpentry", "Painting", "Furniture Repair"], skillsNeed: ["Coding", "Photography"] },
-  { id: 5, name: "Priya Patel", bio: "Photographer and yoga instructor. New to the block!", avatar: "PP", skillsHave: ["Photography", "Yoga", "Graphic Design"], skillsNeed: ["Carpentry", "Cooking"] },
-  { id: 6, name: "David Okafor", bio: "Chef at a downtown restaurant. Will cook for favors!", avatar: "DO", skillsHave: ["Cooking", "Catering", "Meal Prep"], skillsNeed: ["Tech Help", "Gardening"] },
+  { id: 1, name: "Maria Santos", bio: "Retired teacher in Bed-Stuy. Love gardening and baking sourdough.", avatar: "MS", borough: "Brooklyn", skillsHave: ["Baking", "Tutoring", "Gardening"], skillsNeed: ["Plumbing", "Tech Help"] },
+  { id: 2, name: "James Chen", bio: "Software engineer in Astoria. Happy to help with anything tech.", avatar: "JC", borough: "Queens", skillsHave: ["Coding", "Networking", "PC Repair"], skillsNeed: ["Carpentry", "Baking"] },
+  { id: 3, name: "Aisha Johnson", bio: "Licensed plumber and weekend DJ from Harlem. Block party ready!", avatar: "AJ", borough: "Manhattan", skillsHave: ["Plumbing", "DJ", "Event Planning"], skillsNeed: ["Gardening"] },
+  { id: 4, name: "Tom Kowalski", bio: "Carpenter in Bay Ridge. Building things is my therapy.", avatar: "TK", borough: "Brooklyn", skillsHave: ["Carpentry", "Painting", "Furniture Repair"], skillsNeed: ["Coding", "Photography"] },
+  { id: 5, name: "Priya Patel", bio: "Photographer and yoga instructor. Just moved to Park Slope!", avatar: "PP", borough: "Brooklyn", skillsHave: ["Photography", "Yoga", "Graphic Design"], skillsNeed: ["Carpentry", "Cooking"] },
+  { id: 6, name: "David Okafor", bio: "Chef in Crown Heights. Will cook for favors!", avatar: "DO", borough: "Brooklyn", skillsHave: ["Cooking", "Catering", "Meal Prep"], skillsNeed: ["Tech Help", "Gardening"] },
 ];
 
 const Directory = () => {

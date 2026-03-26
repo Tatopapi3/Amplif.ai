@@ -1,26 +1,26 @@
 import { motion } from "framer-motion";
-import { Wrench, Search, MessageSquare, PartyPopper } from "lucide-react";
+import { Sparkles, Search, MessageSquare, PartyPopper } from "lucide-react";
 
 const features = [
   {
-    icon: Wrench,
-    title: "Skill Profiles",
-    description: "List what you can do and what you need. From plumbing to baking to coding — your skills become community currency.",
+    icon: Sparkles,
+    title: "AI-Powered Matching",
+    description: "Fill out your profile and our AI finds neighbors who share your skills, hobbies, and music taste — from your block to your borough.",
   },
   {
     icon: Search,
     title: "Neighbor Directory",
-    description: "Find the right person on your block. Search by skill, browse profiles, and reach out with a single click.",
+    description: "Browse New Yorkers in your area. Search by skill, filter by borough, and reach out with a single click.",
   },
   {
     icon: MessageSquare,
     title: "Direct Messages",
-    description: "Coordinate trades, plan meetups, or just say hello. Simple 1-on-1 chat that keeps conversations flowing.",
+    description: "Coordinate skill swaps, plan meetups, or just say what's good. Simple 1-on-1 chat that keeps it moving.",
   },
   {
     icon: PartyPopper,
     title: "Block Party Hub",
-    description: "Our guided wizard walks you through permits, funding, food sign-ups, and entertainment booking. No stress.",
+    description: "Our guided wizard walks you through permits, funding, food sign-ups, and entertainment. From Flatbush to Flushing.",
   },
 ];
 
@@ -39,7 +39,7 @@ const FeaturesSection = () => {
             Everything your block needs
           </h2>
           <p className="text-muted-foreground text-lg">
-            Four tools designed to turn strangers into neighbors and neighbors into friends.
+            Four tools to turn five boroughs of strangers into one connected city.
           </p>
         </motion.div>
 

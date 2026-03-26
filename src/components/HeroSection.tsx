@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Users, MessageCircle, PartyPopper } from "lucide-react";
+import { ArrowRight, Users, MessageCircle, PartyPopper, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroImg from "@/assets/hero-neighborhood.jpg";
@@ -7,9 +7,8 @@ import heroImg from "@/assets/hero-neighborhood.jpg";
 const HeroSection = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Background image */}
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Neighborhood block party" className="w-full h-full object-cover" />
+        <img src={heroImg} alt="Diverse NYC neighbors on a brownstone-lined street" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40" />
       </div>
 
@@ -21,7 +20,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7 }}
           >
             <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              Your neighborhood, amplified
+              Built for New Yorkers, block by block
             </span>
           </motion.div>
 
@@ -31,8 +30,8 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            Turn neighbors into a{" "}
-            <span className="text-primary italic">community</span>
+            Your block,{" "}
+            <span className="text-primary italic">amplified</span>
           </motion.h1>
 
           <motion.p
@@ -41,7 +40,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Share skills, swap favors, and plan unforgettable block parties — all on one platform built for your street.
+            AI matches you with neighbors who share your skills, hobbies, and music taste — from your block to all five boroughs.
           </motion.p>
 
           <motion.div
@@ -51,8 +50,8 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
           >
             <Button size="lg" asChild>
-              <Link to="/directory">
-                Get started <ArrowRight className="ml-2 h-4 w-4" />
+              <Link to="/profile">
+                Build my profile <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
@@ -67,7 +66,8 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.5 }}
           >
             {[
-              { icon: Users, label: "Skill sharing", desc: "Trade expertise" },
+              { icon: Sparkles, label: "AI matching", desc: "Find your people" },
+              { icon: Users, label: "Skill swaps", desc: "Trade expertise" },
               { icon: MessageCircle, label: "Direct messaging", desc: "Connect 1-on-1" },
               { icon: PartyPopper, label: "Block parties", desc: "Plan together" },
             ].map((item) => (
